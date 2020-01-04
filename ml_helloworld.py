@@ -20,3 +20,5 @@ url = "/Users/acw036/programming/ml_helloworld/iris.csv"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = read_csv(url, names=names)
 
+print(dataset.describe())
+
