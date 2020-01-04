@@ -1,5 +1,4 @@
 # Load libraries
-
 from pandas import read_csv
 from pandas.plotting import scatter_matrix
 from matplotlib import pyplot
@@ -15,3 +14,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
+
+# Load dataset
+url = "/Users/acw036/programming/ml_helloworld/iris.csv"
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+dataset = read_csv(url, names=names)
+
